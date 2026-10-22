@@ -8,27 +8,27 @@ int main()
     float balance=5000;
     float amount;
 
-    printf("==== WELCOME TO ATM ====\n")
+    printf("==== WELCOME TO ATM ====\n");
 
     printf("%d",enter your pin:");
     scanf(%d,&enterpin);
 
     if(enterpin != pin)
     {
-    printf(invalid pin!\n");
+    printf("invalid pin!\n");
     return 0;
     }
-    printf("\nlogin succesful!\n);
+    printf("\nlogin succesful!\n");
 
     do
     {
 	printf("\n====ATM MENU====\n");
-	printf("1.check balanve\n");
+	printf("1.check balance\n");
 	printf("2.deposit money\n");
 	printf("3.withdraw money\n");
 	printf("4.exit\n");
 
-	printf("enter ypur choice:");
+	printf("enter your choice:");
 	scanf("%d",&choice);
 
 	switch(choice)
@@ -45,11 +45,11 @@ int main()
 		{
 		   balance=balance+amount;
 		   printf("money deposited succesfully!\n");
-		   printf("new balance: rs. %.2f\n,balance);
+		   printf("new balance: rs. %.2f\n",balance);
 		   }
 		else
 		{
-		   printf("invalid amount!\n);
+		   printf("invalid amount!\n");
 		   }
 		   break;
 		case 3:
@@ -63,7 +63,7 @@ int main()
 		   else if (amount <= balance)
 		   {
 		       balance=balance-amount;
-		       printf("please collect your cash.\n);
+		       printf("please collect your cash.\n");
 		       printf("remaining balance: rs. %.2f\n",balance);
 		       }
 		 else
